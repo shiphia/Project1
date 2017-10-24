@@ -15,6 +15,7 @@ import com.niit.Ecombend.models.Supplier;
 import com.niit.Ecombend.models.Cart;
 import com.niit.Ecombend.models.Category;
 import com.niit.Ecombend.models.User;
+import com.niit.Ecombend.models.order;
 @Configuration
 @ComponentScan("com.niit.Ecombend")
 
@@ -31,7 +32,7 @@ public class HibernateConfig
 	        sessionBuilder.addAnnotatedClass(Product.class);
 	        sessionBuilder.addAnnotatedClass(Supplier.class);
 	        sessionBuilder.addAnnotatedClass(Cart.class);
-		      
+	        sessionBuilder.addAnnotatedClass(order.class);
 	        sessionBuilder.addAnnotatedClass(Category.class);
 	        sessionBuilder.addAnnotatedClass(User.class);
 	        return sessionBuilder.buildSessionFactory();

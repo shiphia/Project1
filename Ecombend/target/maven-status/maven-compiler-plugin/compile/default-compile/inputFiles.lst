@@ -3,6 +3,7 @@ C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\config\Hiberna
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\ProductDaoimpl.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\CartDaoimpl.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\App.java
+C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\orderdaoimpl.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\UserDAO.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\models\Supplier.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\cartDAO.java
@@ -12,6 +13,8 @@ C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\productDAO
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\SupplierDAO.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\models\Cart.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\models\User.java
+C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\models\order.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\CategoryDaoimpl.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\SupplierDaoimpl.java
+C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\dao\orderdao.java
 C:\Users\owner\workspace\Ecombend\src\main\java\com\niit\Ecombend\models\Category.java

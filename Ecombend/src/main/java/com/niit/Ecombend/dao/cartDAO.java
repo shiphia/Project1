@@ -7,6 +7,8 @@ import com.niit.Ecombend.models.Product;
 
 
 public interface cartDAO{
+	
+	public void saveCart(Cart c);
 	public List<Cart> getcartbyusernmae(String Username);
 	public Product getprbyid(int id);
 	public Cart getcartbyid(int id);

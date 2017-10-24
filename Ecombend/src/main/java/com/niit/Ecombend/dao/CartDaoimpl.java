@@ -44,7 +44,7 @@ public class CartDaoimpl implements cartDAO {
 		Session s=sessionF.openSession();
 		Transaction t=s.getTransaction();
 		t.begin();
-		Query q=s.createQuery("from Cart where USERNAME='"+Username+"'");
+		Query q=s.createQuery("from Cart where username='"+Username+"'");
 		List<Cart> cat=(List<Cart>)q.list();
 
         t.commit();

@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    <title>update</title>
+    <jsp:include page="header.jsp"/>
 <div class="container">
             <form action="saveupdateproduct" >
                 <h2>Product Update</h2>
@@ -8,7 +10,7 @@
                 <div class="form-group">
                 <label for="firstName" class="col-sm-3 control-label">Product ID</label>
                     <div class="col-sm-9">
-                        <input type="text" id="firstName" value="${pro.id }" name="id" autofocus>
+                        <input type="text" id="firstName" value="${pro.id }" name="id" autofocus readonly="readonly">
                         <span class="help-block"></span>
                     </div>
                      <div class="col-sm-9">
@@ -51,3 +53,4 @@
                
             </form> <!-- /form -->
         </div> <!-- ./container -->
+        <jsp:include page="footer.jsp"/>

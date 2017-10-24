@@ -86,17 +86,7 @@ public class CategoryDaoimpl implements categoryDAO{
 	}
 
 
-	public void saveupdatecategory(Category c) {
-		Session s=sessionFactory.openSession();
-		Transaction t=s.beginTransaction();
-		s.save(c);
-		t.commit();
-		s.close();
-		
-		
-	}
-
-
+	
 	
 	
 	

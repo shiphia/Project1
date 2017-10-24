@@ -12,21 +12,21 @@
     <security:intercept-url pattern="/login"
      access="permitAll" />
   <!--   <security:intercept-url pattern="/user/**"
-     access="hasRole('ROLE USER')" /> -->
+     access="hasRole('ROLE_USER')" /> -->
 		<security:form-login 
 		    login-processing-url="/j_spring_security_check"
 			password-parameter="j_password"
 			 username-parameter="j_username"
-			 authentication-failure-url="/error" 
+			 authentication-failure-url="/invalid" 
 			default-target-url="/"
-			login-page="/login" />
+			login-page="/logn" />
 			
 
 		<security:logout
 		     logout-url="/j_spring_security_logout"
 			logout-success-url="/" />
             <security:access-denied-handler
-                     error-page="/error" />
+                     error-page="/authFa" />
                      <!-- enable csrf protection -->
 		<security:csrf disabled="true" />
 	</security:http>
@@ -35,8 +35,8 @@
 		<security:authentication-provider>
 			<security:jdbc-user-service
 				data-source-ref="datasource"
-				users-by-username-query="SELECT email, password, 'true' as enabled FROM User WHERE email = ?"
-				authorities-by-username-query="SELECT email, role From User WHERE email = ?" />
+				users-by-username-query="SELECT EMAIL, PASSWORD, 'true' as enabled FROM User WHERE EMAIL = ?"
+				authorities-by-username-query="SELECT EMAIL, ROLE From User WHERE EMAIL = ?" />
 		</security:authentication-provider>
 	</security:authentication-manager>
 </beans>

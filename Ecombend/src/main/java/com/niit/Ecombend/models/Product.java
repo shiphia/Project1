@@ -43,7 +43,17 @@ public class Product  implements Serializable{
     @Column(name = "STOCK", nullable = false)
     private int stock;
   
-	
+    @Column(name = "IMG", nullable = false)
+    private String img;
+    
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
 
 	public int getPrice() {
 		return price;

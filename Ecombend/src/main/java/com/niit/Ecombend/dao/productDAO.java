@@ -1,7 +1,8 @@
 package com.niit.Ecombend.dao;
+import java.util.ArrayList;
 import java.util.List;
 
-
+import com.niit.Ecombend.models.Category;
 import com.niit.Ecombend.models.Product;
 
 public interface productDAO {
@@ -11,6 +12,7 @@ public interface productDAO {
 	public void deleteProduct(int id);
 	public void updateProduct(Product p);
 	public void saveupdateProduct(Product p);
+	public List<Product> getprbycatid(int id);
 	}
 
 

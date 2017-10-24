@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+<title>cartlist</title>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<jsp:include page="header.jsp"/>
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -25,9 +27,7 @@
                 <tbody>
                     <tr>
                         <td class="col-sm-8 col-md-6">
-                        <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                            <div class="media-body">
+                        
                                 <h4 class="media-heading"><a href="#">${c.name} </a></h4>
                                
                                 
@@ -49,6 +49,13 @@
                     
                          </c:forEach>       
                      </tbody>
+                     </table>
+                     </div>
+                     </div>
+                     </div>
+                     
+ <jsp:include page="footer.jsp"/>
+</html>
                      
                      
  

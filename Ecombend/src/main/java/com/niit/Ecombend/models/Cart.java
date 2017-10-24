@@ -26,14 +26,21 @@ public class Cart {
 	@Column(name = "QUANTITY", nullable = false)
 	private int quantity;
 	
+
 	@Column(name = "PRICE", nullable = false)
 	private int price;
 	
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
 	@Column(name = "USERNAME", nullable = false)
 	private String username;
 	
-	@Column(name = "STATUS", nullable = false)
-	private String status;
 	
 	@ManyToOne
     @JoinColumn(name="PRODUCT_ID",updatable=true,insertable=true,nullable=false)
@@ -55,14 +62,7 @@ public class Cart {
 		this.quantity = quantity;
 	}
 
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
+	
 
 
 	public String getUsername() {
@@ -73,14 +73,7 @@ public class Cart {
 		this.username = username;
 	}
 
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
+	
 	public int getId() {
 		return id;
 	}

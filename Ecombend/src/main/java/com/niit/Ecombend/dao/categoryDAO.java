@@ -13,7 +13,7 @@ public interface categoryDAO {
 	public Category getcatbyid(int cat);
 	public void deletecategory(int id);
 	public void updatecategory(Category c);
-	public void saveupdatecategory(Category c);
+	
 
 }
 

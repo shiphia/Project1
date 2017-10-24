@@ -12,17 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">BEAUTYPLUS</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index">Home</a></li>
-      
-    </ul>
-  </div> 
-</nav>
+<jsp:include page="header.jsp"/>
 <div class="container">
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#cat">Category</a></li>
@@ -42,7 +32,7 @@
    </form> </div>
     
  <div id="prod" class="tab-pane fade in active">
- <form role="form" action="saveProduct" method="post">
+ <form role="form" action="saveProduct" method="post" enctype="multipart/form-data">
     
       <h3>Product</h3>
       <label><b>NAME</b></label>
@@ -52,6 +42,9 @@
     <input type="number"  name="price" id="price" required></br>
     <label><b>stock</b></label>
     <input type="number" name="stock"  id="stock" required></br>
+    <div class="form-group"> IMAGE                  
+           <input type="file" name="img"  id="img" required/>
+        </div>
      <label><b>Category</b></label>
      <select name="cid">
      <c:forEach var = "c" items="${cat}">
@@ -97,6 +90,7 @@
     
 
 
+<jsp:include page="footer.jsp"/>
 
 </body>
 </html>

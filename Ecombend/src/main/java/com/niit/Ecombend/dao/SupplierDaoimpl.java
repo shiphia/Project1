@@ -97,7 +97,7 @@ public class SupplierDaoimpl implements SupplierDAO{
 			public void saveupdatesupplier(Supplier s) {
 				Session ss=sessionFactory.openSession();
 				Transaction t=ss.beginTransaction();
-				ss.save(s);
+				ss.update(s);
 				t.commit();
 				ss.close();
 				

@@ -14,6 +14,22 @@
 
 </head>
 <jsp:include page="header.jsp"/>
+<style>
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer {
+    background: blue;
+    height: 100px;
+    margin: auto;
+    width: 400px;
+    text-align:center;
+    padding:10px;
+    color:#ffffff;
+}</style>
   <div class="container">
 
   <div id="myCarousel" class="carousel slide "  data-ride="carousel">
@@ -63,11 +79,8 @@
     </a>
   </div>
 </div>
-<footer>
-  <p>Posted by: Beauty plus</p>
-  
-</footer>
 
+<jsp:include page="footer.jsp"/>
 
 
 </body>

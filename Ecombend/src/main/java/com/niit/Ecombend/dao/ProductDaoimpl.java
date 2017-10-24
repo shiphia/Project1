@@ -1,5 +1,6 @@
 package com.niit.Ecombend.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Query;
@@ -9,6 +10,7 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.niit.Ecombend.models.Category;
 import com.niit.Ecombend.models.Product;
 import com.niit.Ecombend.models.Supplier;
 
@@ -95,13 +97,28 @@ public class ProductDaoimpl implements productDAO{
 	public void saveupdateProduct(Product p) {
 		Session s=sessionFactory.openSession();
 		Transaction t=s.beginTransaction();
-		s.save(p);
+		s.update(p);
 		t.commit();
 		s.close();
 		
 		
 	}
 
+
+	public List<Product> getprbycatid(int id) {
+		Session s=sessionFactory.openSession();
+		Transaction t=s.getTransaction();
+		t.begin();
+		Query q=s.createQuery("from Product where cid="+id);
+		List<Product> cat=(List<Product>)q.list();
+
+        t.commit();
+        s.close();
+		return cat;
+	}
+
+
+	
 
 	
 
